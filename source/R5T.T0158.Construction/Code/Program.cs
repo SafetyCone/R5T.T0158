@@ -7,7 +7,7 @@ namespace R5T.T0158.Construction
     {
         static void Main()
         {
-            Console.WriteLine("Hello World!");
+            Operations.Instance.TestHumanOutput();
         }
     }
 }
