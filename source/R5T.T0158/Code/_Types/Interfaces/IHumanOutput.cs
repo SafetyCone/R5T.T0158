@@ -1,5 +1,7 @@
 using System;
 
+using R5T.T0142;
+
 
 namespace R5T.T0158
 {
@@ -29,6 +31,7 @@ namespace R5T.T0158
     /// And other human-output sinks might be status bars in Windows forms applications, or a blocking modal that displays the human-output as a long operation runs in a web app.
     /// </para>
     /// </remarks>
+    [UtilityTypeMarker]
     public interface IHumanOutput
     {
         /// <summary>

@@ -26,6 +26,12 @@ namespace R5T.T0158.F000
             return compositeHumanOutput;
         }
 
+        public IHumanOutput Get_New_Null()
+        {
+            var output = new NullHumanOutput();
+            return output;
+        }
+
         /// <summary>
         /// Creates a composite console and text-file human output instance, and provides it to the specified action.
         /// </summary>
