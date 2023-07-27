@@ -11,10 +11,16 @@ namespace R5T.T0158.F000
     [FunctionalityMarker]
     public partial interface IHumanOutputOperator : IFunctionalityMarker
     {
+        public ConsoleHumanOutput Get_Console()
+        {
+            var output = new ConsoleHumanOutput();
+            return output;
+        }
+
         public CompositeHumanOutput GetCompositeHumanOutput_ConsoleAndFile(
             string humanOutputTextFilePath)
         {
-            var consoleHumanOutput = new ConsoleHumanOutput();
+            var consoleHumanOutput = this.Get_Console();
 
             var textFileHumanOutput = new TextFileHumanOutput(
                 humanOutputTextFilePath);
