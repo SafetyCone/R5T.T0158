@@ -9,7 +9,8 @@ using R5T.T0158.T000;
 namespace R5T.T0158.F000
 {
     [FunctionalityMarker]
-    public partial interface IHumanOutputOperator : IFunctionalityMarker
+    public partial interface IHumanOutputOperator : IFunctionalityMarker,
+        T0158.IHumanOutputOperator
     {
         public ConsoleHumanOutput Get_Console()
         {
@@ -30,12 +31,6 @@ namespace R5T.T0158.F000
                 textFileHumanOutput);
 
             return compositeHumanOutput;
-        }
-
-        public IHumanOutput Get_New_Null()
-        {
-            var output = new NullHumanOutput();
-            return output;
         }
 
         /// <summary>
