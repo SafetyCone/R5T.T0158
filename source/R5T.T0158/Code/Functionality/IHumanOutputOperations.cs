@@ -15,9 +15,9 @@ namespace R5T.T0158
             Action<IHumanOutput> action = default,
             Action<IHumanOutput> postAction = default)
         {
-            Instances.ActionOperator.Run(preAction, humanOutput);
-            Instances.ActionOperator.Run(action, humanOutput);
-            Instances.ActionOperator.Run(postAction, humanOutput);
+            Instances.ActionOperator.Run(humanOutput, preAction);
+            Instances.ActionOperator.Run(humanOutput, action);
+            Instances.ActionOperator.Run(humanOutput, postAction);
         }
 
         public void WriteLine(IHumanOutput humanOutput,
