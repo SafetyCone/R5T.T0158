@@ -21,7 +21,7 @@ namespace R5T.T0158.F000
         public string GetHumanOutputTextFileName(
             string applicationName)
         {
-            var dateTime = Instances.NowOperator.GetNow();
+            var dateTime = Instances.NowOperator.Get_Now();
 
             var output = this.GetHumanOutputTextFileName(
                 applicationName,
