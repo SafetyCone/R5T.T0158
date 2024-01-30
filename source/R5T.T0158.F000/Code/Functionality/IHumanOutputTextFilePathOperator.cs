@@ -14,7 +14,7 @@ namespace R5T.T0158.F000
 
             var fileName = Instances.HumanOutputTextFileNameOperator.GetHumanOutputTextFileName();
 
-            var output = Instances.PathOperator.GetFilePath(
+            var output = Instances.PathOperator.Get_FilePath(
                 directoryPath,
                 fileName);
 
